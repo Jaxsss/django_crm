@@ -8,8 +8,6 @@ from .models import Record
 def home(request):
     records = Record.objects.all()
 
-
-
     # Check is user is logging in
     if request.method == 'POST':
         username = request.POST['username']
